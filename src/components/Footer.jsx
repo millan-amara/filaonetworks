@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaUser } from "react-icons/fa6";
+import { FaArrowRight, FaFacebookF, FaUser } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import CctvImage from '../assets/camera.jpg';
+import Router from "../assets/router.png";
+import Wifi from "../assets/wifi.png";
 
 function Footer() {
   return (
-    <footer id="footer" className="bg-zinc-900 text-white px-5 pt-14 pb-8 text-sm">
+    <footer id="footer" className="bg-zinc-900 text-white px-5 pt-14 pb-8">
     <div className="flex flex-col md:flex-row justify-around mb-5">
         <div className="w-full md:w-1/4 md:flex md:flex-col md:justify-center md:items-center">
             <p className="brand text-3xl mb-3 text-amber-500 font-semibold">Filao Networks</p>
@@ -21,11 +22,13 @@ function Footer() {
             <p className=""></p>
         </div>
         <div className="mt-10 md:mt-0">
-            <img src={CctvImage} alt="" className='h-56 rounded-3xl w-full' />
+            <img src={Router} alt="" className='h-56 rounded-3xl w-full' />
             <div className='-mt-48 text-center'>
                 <p className='text-3xl font-black'>Discount!!</p>
-                <p className='text-lg mt-4 font-semibold text-black px-2'>10% off your first month</p>
-                <button className='bg-amber-500 w-1/2 px-4 py-1 text-xl rounded-md mt-6 hover:bg-amber-600'>Get it</button>
+                <p className='text-lg mt-4 font-semibold px-2'>Get 10% off your first month</p>
+                <button className='bg-amber-500 w-1/2 px-4 py-1 text-xl rounded-md mt-6 hover:bg-amber-600'>
+                    Get it
+                </button>
             </div>
             <div className='flex mt-20 text-xl justify-center'>
                 <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link className='text-blue-400'><FaFacebookF /></Link></p>
@@ -36,7 +39,7 @@ function Footer() {
             </div>
         </div>
     </div>
-    <div className="flex justify-center">
+    <div className="flex justify-center text-sm">
         <p>&copy; {new Date().getFullYear()} Filao Network Solutions. All rights reserved</p>
     </div>
 

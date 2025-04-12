@@ -1,59 +1,124 @@
 import React from 'react';
+import { motion } from "framer-motion";
+
+const plans = [
+    {
+      title: "Filao Core",
+      speed: "8 Mbps",
+      features: [
+        "✔ Unlimited Internet",
+        "✔ 24/7 Support",
+        "✔ Smooth video calls",
+        "✔ Ideal for browsing & streaming",
+      ],
+      price: "KES 1500 / month",
+      highlight: false,
+    },
+    {
+      title: "Filao Plus",
+      speed: "15 Mbps",
+      features: [
+        "✔ Unlimited Internet",
+        "✔ 24/7 Support",
+        "✔ Great for work-from-home & streaming",
+        "✔ Supports up to 8 devices",
+        "✔ Free Router Installation",
+      ],
+      price: "KES 2500 / month",
+      highlight: true,
+    },
+    {
+      title: "Filao Max",
+      speed: "30 Mbps",
+      features: [
+        "✔ Unlimited Internet",
+        "✔ 24/7 Support",
+        "✔ Ultra-fast downloads",
+        "✔ Perfect for smart homes & gaming",
+        "✔ Priority customer support",
+      ],
+      price: "KES 4500 / month",
+      highlight: false,
+    },
+];
+  
+const container = {
+hidden: {},
+visible: {
+    transition: {
+    staggerChildren: 0.25,
+    delayChildren: 0.4,
+    },
+},
+};
+
+const cardVariant = {
+hidden: { opacity: 0, y: 40 },
+visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+    type: "spring",
+    stiffness: 100,
+    },
+},
+};
 
 function Packages() {
   return (
     <>
-    <div className='my-8 px-4 h-auto md:min-h-screen md:flex flex-col justify-center'>
-      <h1 className='text-xl md:text-2xl text-center mb-8'>
-        Get connected from as low as <span className='text-green-500 font-semibold'>KES 1500</span> per month!
-      </h1>
+    <motion.div
+      className="my-8 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={container}
+    >
+      <motion.h1
+        className="text-xl md:text-2xl text-center mb-8"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Get connected from as low as{" "}
+        <span className="text-green-500 font-semibold">KES 1500</span> per
+        month!
+      </motion.h1>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 packages max-w-6xl mx-auto'>
-        {/* Core Plan */}
-        <div className='border border-slate-200 py-6 px-4 rounded-md shadow hover:shadow-md text-center'>
-          <h1 className='text-2xl font-bold mb-2'>Filao Core</h1>
-          <p className='text-lg font-semibold text-gray-600 mb-4'>8 Mbps</p>
-          <ul className='mb-4 space-y-2 text-sm'>
-            <li>✔ Unlimited Internet</li>
-            <li>✔ 24/7 Support</li>
-            <li>✔ Smooth video calls</li>
-            <li>✔ Ideal for browsing & streaming</li>
-          </ul>
-          <p className='mt-4 text-xl font-semibold text-green-600'>KES 1500 / month</p>
-        </div>
-
-        {/* Plus Plan (Popular) */}
-        <div className='border-2 border-amber-500 py-8 px-6 rounded-md shadow-lg text-center transform md:scale-105 bg-white relative'>
-          <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-semibold px-2 py-1 rounded-bl">
-            Popular
-          </div>
-          <h1 className='text-2xl font-bold mb-2'>Filao Plus</h1>
-          <p className='text-lg font-semibold text-gray-600 mb-4'>15 Mbps</p>
-          <ul className='mb-4 space-y-2 text-sm'>
-            <li>✔ Unlimited Internet</li>
-            <li>✔ 24/7 Support</li>
-            <li>✔ Great for work-from-home & streaming</li>
-            <li>✔ Supports up to 8 devices</li>
-            <li>✔ Free Router Installation</li>
-          </ul>
-          <p className='mt-4 text-xl font-semibold text-green-600'>KES 2500 / month</p>
-        </div>
-
-        {/* Max Plan */}
-        <div className='border border-slate-200 py-6 px-4 rounded-md shadow hover:shadow-md text-center'>
-          <h1 className='text-2xl font-bold mb-2'>Filao Max</h1>
-          <p className='text-lg font-semibold text-gray-600 mb-4'>30 Mbps</p>
-          <ul className='mb-4 space-y-2 text-sm'>
-            <li>✔ Unlimited Internet</li>
-            <li>✔ 24/7 Support</li>
-            <li>✔ Ultra-fast downloads</li>
-            <li>✔ Perfect for smart homes & gaming</li>
-            <li>✔ Priority customer support</li>
-          </ul>
-          <p className='mt-4 text-xl font-semibold text-green-600'>KES 4500 / month</p>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 packages max-w-6xl mx-auto">
+        {plans.map((plan, index) => (
+          <motion.div
+            key={index}
+            variants={cardVariant}
+            whileHover={{ scale: 1.03 }}
+            className={`${
+              plan.highlight
+                ? "border-2 border-amber-500 py-8 px-6 rounded-md shadow-lg text-center transform md:scale-105 bg-white relative"
+                : "border border-slate-200 py-6 px-4 rounded-md shadow hover:shadow-md text-center"
+            }`}
+          >
+            {plan.highlight && (
+              <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-semibold px-2 py-1 rounded-bl">
+                Popular
+              </div>
+            )}
+            <h1 className="text-2xl font-bold mb-2">{plan.title}</h1>
+            <p className="text-lg font-semibold text-gray-600 mb-4">
+              {plan.speed}
+            </p>
+            <ul className="mb-4 space-y-2 text-sm">
+              {plan.features.map((f, i) => (
+                <li key={i}>{f}</li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xl font-semibold text-green-600">
+              {plan.price}
+            </p>
+          </motion.div>
+        ))}
       </div>
-    </div>
+    </motion.div>
 
     <section className="my-16 md:mt-16 md:mb-40 text-center px-4 max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold mb-4">Why Choose Filao?</h2>
