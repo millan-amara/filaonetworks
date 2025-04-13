@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           </Routes>
         </main>
 
+        <WhatsAppButton />
         <Footer />
       </div>
     </Router>

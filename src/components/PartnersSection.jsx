@@ -99,15 +99,6 @@ function PartnersSection() {
                       <img src={partner.img} alt={partner.title} className={partner.desc} />
                     </motion.div>
                   ))}
-            {/* <img src={HikvisionImage} alt="" className='mx-auto h-20 mb-4' />
-            <img src={TplinkImage} alt="" className='w-1/2 md:w-1/3' />
-            <img src={BoschImage} alt="" className='w-3/4 md:w-1/2' />
-            <img src={DlinkImage} alt="" className='w-1/2 md:w-1/3' />
-            <img src={MikrotikImage} alt="" className='w-3/4 md:w-1/2' />
-            <img src={NetgearImage} alt="" className='w-3/4 md:w-1/2' />
-            <img src={UbImage} alt="" className='w-3/4 md:w-1/2' />
-            <img src={CommImage} alt="" className='w-3/4 md:w-1/2' />
-            <img src={DahuaImage} alt="" className='w-1/2 md:w-1/3' /> */}
         </div>
         </div>
     </section>

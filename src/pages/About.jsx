@@ -6,7 +6,7 @@ function About() {
       <section className="p-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">About Us</h2>
-          <p className="mb-4">NetSecure Solutions is dedicated to providing fast, secure, and scalable networking services tailored to each client’s needs. With a team of certified professionals and years of experience, we deliver reliable connectivity and top-tier security systems.</p>
+          <p className="mb-4">Filao Network Solutions is dedicated to providing fast, secure, and scalable networking services tailored to each client’s needs. With a team of certified professionals and years of experience, we deliver reliable connectivity and top-tier security systems.</p>
           <img src="/about-us.jpg" alt="Our team" className="rounded shadow-lg" />
         </div>
       </section>

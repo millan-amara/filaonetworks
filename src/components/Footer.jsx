@@ -33,9 +33,9 @@ function Footer() {
             <div className='flex mt-20 text-xl justify-center'>
                 <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link className='text-blue-400'><FaFacebookF /></Link></p>
                 <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link><FaInstagram /></Link></p>
-                <p className='mr-3 bg-green-400 rounded-full flex py-2 px-2'><Link><FaWhatsapp /></Link></p>
+                <p className='mr-3 bg-green-400 rounded-full flex py-2 px-2'><a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></p>
                 <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link><FaTiktok /></Link></p>
-                <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link to='/profile'><FaUser /></Link></p>
+                {/* <p className='mr-3 bg-zinc-700 rounded-full flex py-2 px-2'><Link to='/'><FaUser /></Link></p> */}
             </div>
         </div>
     </div>

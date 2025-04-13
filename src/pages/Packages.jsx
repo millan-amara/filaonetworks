@@ -107,7 +107,7 @@ function Packages() {
             <p className="text-lg font-semibold text-gray-600 mb-4">
               {plan.speed}
             </p>
-            <ul className="mb-4 space-y-2 text-sm">
+            <ul className="mb-4 space-y-2">
               {plan.features.map((f, i) => (
                 <li key={i}>{f}</li>
               ))}
@@ -125,7 +125,7 @@ function Packages() {
         <p className="text-gray-600 mb-6">
             Whether you're working from home, streaming in HD, or managing smart devices, Filao delivers fast, reliable, and affordable internet solutions.
         </p>
-        <div className="grid md:grid-cols-3 gap-4 text-sm text-left">
+        <div className="grid md:grid-cols-3 gap-4 text-left">
             <div>✅ No hidden fees or contracts</div>
             <div>✅ Free installation on select plans</div>
             <div>✅ Trusted local support team</div>
@@ -139,36 +139,36 @@ function Packages() {
         <h2 className="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
         <div className="space-y-6">
             <div>
-            <h3 className="font-semibold">How long does installation take?</h3>
-            <p className="text-sm text-gray-600">Most installations are completed within 12-24 hours after sign-up.</p>
+            <h3 className="font-semibold text-lg">How long does installation take?</h3>
+            <p className="text-gray-600">Most installations are completed within 12-24 hours after sign-up.</p>
             </div>
             <div>
-            <h3 className="font-semibold">Is there a contract?</h3>
-            <p className="text-sm text-gray-600">No long-term contract is required. You can upgrade or cancel anytime.</p>
+            <h3 className="font-semibold text-lg">Is there a contract?</h3>
+            <p className="text-gray-600">No long-term contract is required. You can upgrade or cancel anytime.</p>
             </div>
             <div>
-            <h3 className="font-semibold">Do I get a router?</h3>
-            <p className="text-sm text-gray-600">Yes, a router is included with the Plus and Max packages. For Core, you can use your own or rent one from us.</p>
+            <h3 className="font-semibold text-lg">Do I get a router?</h3>
+            <p className="text-gray-600">Yes, a router is included with the Plus and Max packages. For Core, you can use your own or rent one from us.</p>
             </div>
             <div>
-            <h3 className="font-semibold">Can I upgrade my package later?</h3>
-            <p className="text-sm text-gray-600">Absolutely! You can switch to a higher or lower package anytime — just contact our support team.</p>
+            <h3 className="font-semibold text-lg">Can I upgrade my package later?</h3>
+            <p className="text-gray-600">Absolutely! You can switch to a higher or lower package anytime — just contact our support team.</p>
             </div>
             <div>
-            <h3 className="font-semibold">What areas do you cover?</h3>
-            <p className="text-sm text-gray-600">We currently serve most parts of Nairobi and its surrounding areas. Contact us to check coverage in your location.</p>
+            <h3 className="font-semibold text-lg">What areas do you cover?</h3>
+            <p className="text-gray-600">We currently serve most parts of Nairobi and its surrounding areas. Contact us to check coverage in your location.</p>
             </div>
             <div>
-            <h3 className="font-semibold">What payment options are available?</h3>
-            <p className="text-sm text-gray-600">You can pay via M-Pesa, bank transfer, or cash. We also offer automated monthly billing options.</p>
+            <h3 className="font-semibold text-lg">What payment options are available?</h3>
+            <p className="text-gray-600">You can pay via M-Pesa, bank transfer, or cash. We also offer automated monthly billing options.</p>
             </div>
             <div>
-            <h3 className="font-semibold">What happens if I have issues with my connection?</h3>
-            <p className="text-sm text-gray-600">Our support team is available 24/7. We'll resolve most issues remotely, and if needed, send a technician to your location.</p>
+            <h3 className="font-semibold text-lg">What happens if I have issues with my connection?</h3>
+            <p className="text-gray-600">Our support team is available 24/7. We'll resolve most issues remotely, and if needed, send a technician to your location.</p>
             </div>
             <div>
-            <h3 className="font-semibold">Is the internet truly unlimited?</h3>
-            <p className="text-sm text-gray-600">Yes! All our packages offer uncapped data with no hidden limits or throttling.</p>
+            <h3 className="font-semibold text-lg">Is the internet truly unlimited?</h3>
+            <p className="text-gray-600">Yes! All our packages offer uncapped data with no hidden limits or throttling.</p>
             </div>
         </div>
     </section>
@@ -176,7 +176,7 @@ function Packages() {
 
     <section className="mt-16 px-4 max-w-4xl mx-auto text-center h-auto md:min-h-screen md:flex flex-col justify-center">
         <h2 className="text-2xl font-bold mb-6">What Our Customers Say</h2>
-        <div className="grid md:grid-cols-2 gap-6 text-sm text-left">
+        <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-white p-4 shadow rounded">
             <p>"Excellent service! Internet has been stable for months. Highly recommend Filao!"</p>
             <p className="mt-2 text-right font-semibold">– James, Embakasi</p>

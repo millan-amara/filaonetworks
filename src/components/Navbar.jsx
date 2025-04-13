@@ -1,13 +1,9 @@
 import React from 'react';
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { Link } from 'react-router-dom';
-import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaBars, FaPhone } from "react-icons/fa6";
+import { FaTiktok, FaWhatsapp, FaTimes, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +15,7 @@ function Navbar() {
             <p className='hidden md:flex mr-6 items-center'><span className='mr-1'><MdEmail /></span>info@filaonetworks.co.ke</p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaFacebookF /></Link></p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaInstagram /></Link></p>
-            <p className='hidden md:flex mr-3 bg-green-500 rounded-full py-2 px-2'><Link className='text-lg'><FaWhatsapp /></Link></p>
+            <p className='hidden md:flex mr-3 bg-green-500 rounded-full py-2 px-2'><a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className='text-lg'><FaWhatsapp /></a></p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaTiktok /></Link></p>
         </div>
 
@@ -30,8 +26,11 @@ function Navbar() {
             </Link>
 
             {/* Hamburger toggle */}
-            <button className="sm:hidden z-20" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <button 
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="md:hidden text-3xl focus:outline-none"
+            >
+                {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
 
             {/* Desktop menu */}
@@ -44,16 +43,48 @@ function Navbar() {
             </nav>
 
             {/* Mobile menu */}
+            <div 
+                className={`fixed top-0 right-0 h-screen z-60 w-3/4 max-w-xs bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+                    menuOpen ? "translate-x-0" : "translate-x-full"
+                } md:hidden`}
+            >
+                <button 
+                    onClick={() => setMenuOpen(false)} 
+                    className="absolute top-4 right-4 text-3xl"
+                    >
+                    <FaTimes />
+                </button>
+
+                <div className="flex flex-col mx-auto p-6 mt-10 text-sm">
+                    <Link to="/" className="hover:underline py-2 mb-2">Home</Link>
+                    <Link to="/packages" className="hover:underline py-2 mb-2">Packages</Link>
+                    <Link to="/services" className="hover:underline py-2 mb-2">Services</Link>
+                    <Link to="/about" className="hover:underline py-2 mb-2">About</Link>
+                    <Link to="/contact" className="hover:underline py-2">Contact</Link>
+                </div>
+
+                {/* Contact Support section */}
+                <div className="absolute bottom-24 left-0 w-full text-center text-sm text-slate-600 px-4">
+                    <div className="mb-1 font-semibold text-black">Contact Support</div>
+                    <div className="mb-1">
+                        <a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className="font-medium flex justify-center items-center">
+                        <span className='text-green-700 mr-1'>Chat on WhatsApp</span>
+                        <FaExternalLinkAlt />
+                        </a>
+                    </div>
+                    <div>
+                        <span className="font-medium">Email:</span> <span className="">support@filaonetworks.co.ke</span>
+                    </div>
+                </div>
+            </div>
             {menuOpen && (
-            <nav className="absolute top-full left-0 w-full bg-black text-white flex flex-col items-center space-y-2 py-4 sm:hidden z-10">
-                <Link to="/" onClick={() => setMenuOpen(false)} className="hover:underline">Home</Link>
-                <Link to="/packages" onClick={() => setMenuOpen(false)} className="hover:underline">Packages</Link>
-                <Link to="/services" onClick={() => setMenuOpen(false)} className="hover:underline">Services</Link>
-                <Link to="/about" onClick={() => setMenuOpen(false)} className="hover:underline">About</Link>
-                <Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:underline">Contact</Link>
-            </nav>
+            <div 
+                className="fixed top-0 left-0 w-full h-screen bg-black opacity-50 z-40 md:hidden"
+                onClick={() => setMenuOpen(false)}
+            ></div>
             )}
         </header>
+
     </>
 
   )
