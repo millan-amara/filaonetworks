@@ -21,7 +21,7 @@ import Navbar from "./Navbar";
 
 const HeroSection = ({ el }) => {
   return (
-    <div className="relative h-screen md:bg-black md:text-white overflow-hidden">
+    <div className="relative min-h-screen md:bg-black md:text-white overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: `url(${Cctv})` }}
@@ -29,9 +29,9 @@ const HeroSection = ({ el }) => {
 
       <Navbar />
     
-    <section className="h-[calc(100vh-30px)] md:text-white flex flex-col justify-center items-center text-center px-4 z-20 relative">
-      <div className="text-3xl md:text-4xl font-bold mb-4 md:mb-12">
-        <span>Experience </span>
+    <section className="h-[calc(100vh-30px)] md:text-white flex flex-col justify-center items-center text-center z-20 relative">
+      <div className="text-4xl md:text-4xl font-bold mb-4 md:mb-12">
+        <span>Better </span>
         <span ref={el} className="auto-type text-amber-500 min-h-[3em]"></span>
       </div>
       <p className="text-lg mb-6 md:w-1/2">

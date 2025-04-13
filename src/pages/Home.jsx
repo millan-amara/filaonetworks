@@ -19,7 +19,7 @@ function Home() {
   
     React.useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['Better Coverage', 'Beter Security', 'Better Speeds', 'Better Access'],
+        strings: ['Coverage', 'Security', 'Speeds', 'Access'],
         typeSpeed: 100,
         backSpeed: 100,
         loop: true,
