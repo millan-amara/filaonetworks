@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
+import Navbar from '../components/Navbar';
 
 const plans = [
     {
@@ -68,6 +69,7 @@ visible: {
 function Packages() {
   return (
     <>
+    <Navbar />
     <motion.div
       className="my-12 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
       initial="hidden"

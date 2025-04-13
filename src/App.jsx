@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Scroll />
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />

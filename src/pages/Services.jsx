@@ -4,15 +4,17 @@ import { FaHome, FaStore, FaSchool, FaIndustry } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaComments, FaTools, FaHeadset } from "react-icons/fa";
 import ServiceSection from '../components/ServiceSection';
+import Navbar from '../components/Navbar';
 
 
 function Services() {
 
     return (
       <>
+      <Navbar />
       <ServiceSection />
 
-      <section className="p-8 md:py-28 bg-gray-100">
+      <section className="p-8 md:py-28 bg-gray-100 mt-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
           How We Work
         </h2>

@@ -1,16 +1,22 @@
 import React from 'react';
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaBars, FaPhone } from "react-icons/fa6";
 import { FaTiktok, FaWhatsapp, FaTimes, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === "/";
 
   return (
     <>
-        <div id="top-nav" className='md:bg-black md:text-white text-sm pt-6 pb-6 px-2 flex justify-center font-semibold items-center' style={{ height: '30px' }}>
+        {/* <div id="top-nav" className='md:bg-black md:text-white text-sm pt-6 pb-6 px-2 flex justify-center font-semibold items-center z-0' style={{ height: '30px' }}> */}
+        <div id="top-nav" className={`text-sm pt-6 pb-6 px-2 flex justify-center font-semibold text-black md:text-white items-center z-20 relative ${
+            isHome ? "bg-white md:bg-transparent" : "md:bg-black bg-white"
+        }`} style={{ height: '30px' }}>
+
             <p className='mr-6 flex items-center'><span className='mr-1'><FaPhone /></span> +254 720-973-059</p>
             <p className='hidden md:flex mr-6 items-center'><span className='mr-1'><MdEmail /></span>info@filaonetworks.co.ke</p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaFacebookF /></Link></p>
@@ -19,7 +25,14 @@ function Navbar() {
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaTiktok /></Link></p>
         </div>
 
-        <header className="md:bg-black bg-white px-8 py-2 flex justify-between items-center sticky top-0 z-50">
+        {/* <header className="md:bg-black bg-white px-8 py-2 flex justify-between items-center sticky top-0 z-0"> */}
+        {/* <header className="bg-transparent px-8 py-2 flex justify-between items-center sticky top-0 z-30 backdrop-blur-sm"> */}
+        <header
+            className={`px-8 py-2 flex justify-between items-center sticky top-0 z-30 text-black md:text-white transition-all duration-300 ${
+                isHome ? "bg-white md:bg-transparent backdrop-blur-sm" : "md:bg-black bg-white"
+            }`}
+        >
+
             <Link to='/' className='flex flex-col items-center'>
                 <p className='brand text-4xl font-semibold text-amber-500'>Filao</p>
                 <p className='text-xl font-normal md:text-white'>Network Solutions</p>

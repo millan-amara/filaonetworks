@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from "@emailjs/browser";
+import Navbar from '../components/Navbar';
 
 function Contact() {
     const formRef = useRef();
@@ -37,6 +38,8 @@ function Contact() {
     }
   
     return (
+      <>
+      <Navbar />
       <section id="contact">
       <div className="contact">
         <h2>Get in Touch</h2>
@@ -58,6 +61,7 @@ function Contact() {
         </form>
       </div>
       </section>
+      </>
     );
 }
 

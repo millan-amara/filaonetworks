@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Navbar from '../components/Navbar';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -10,6 +11,7 @@ function About() {
   return (
     <>
       {/* About Us */}
+      <Navbar />
       <section className="bg-gray-50 p-8 md:py-16 ">
         <motion.div 
           className="max-w-5xl mx-auto text-center"
