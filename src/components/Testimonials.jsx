@@ -28,7 +28,7 @@ const testimonialVariants = {
 
 function Testimonials() {
   return (
-    <section className="pt-16 px-4 bg-white text-center h-auto md:h-screen md:flex flex-col justify-center">
+    <section className="pt-12 px-4 bg-white text-center h-auto md:h-screen md:flex flex-col justify-center">
       <motion.h2
         className="text-3xl font-bold mb-8"
         initial={{ opacity: 0, y: -20 }}

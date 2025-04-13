@@ -7,6 +7,7 @@ import PartnersSection from '../components/PartnersSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
+import Navbar from '../components/Navbar';
 
 function Home() {
 

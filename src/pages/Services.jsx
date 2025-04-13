@@ -1,5 +1,9 @@
 import React from 'react';
-import { CheckCircle, Wifi, Camera, Server, Lock } from "lucide-react";
+import { Wifi, Camera, Server, Lock } from "lucide-react";
+import { FaHome, FaStore, FaSchool, FaIndustry } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaComments, FaTools, FaHeadset } from "react-icons/fa";
+import ServiceSection from '../components/ServiceSection';
 
 
 function Services() {
@@ -24,60 +28,88 @@ function Services() {
   
     return (
       <>
-      <section className="p-8 bg-white h-auto md:min-h-screen">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, i) => (
-            <div key={i} className="bg-gray-50 hover:bg-gray-100 p-6 rounded shadow text-center">
-              <div className="mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p>{service.description}</p>
+      <ServiceSection />
+
+      <section className="p-8 md:py-28 bg-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
+          How We Work
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Step 1 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
+            <div className="flex justify-center text-4xl text-amber-500 mb-4">
+              <FaComments />
             </div>
-          ))}
+            <h3 className="text-xl font-bold mb-2 text-gray-800">1. Consultation</h3>
+            <p className="text-gray-600">
+              We assess your needs and recommend tailored solutions for your space and budget.
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
+            <div className="flex justify-center text-4xl text-green-500 mb-4">
+              <FaTools />
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-gray-800">2. Installation</h3>
+            <p className="text-gray-600">
+              Our technicians handle everything from wiring to configuration with minimal disruption.
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
+            <div className="flex justify-center text-4xl text-blue-500 mb-4">
+              <FaHeadset />
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-gray-800">3. Support</h3>
+            <p className="text-gray-600">
+              Enjoy reliable post-installation support and system maintenance whenever needed.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="p-8 bg-gray-100">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">How We Work</h2>
-        <div className="grid md:grid-cols-3 gap-6 text-center">
-          <div>
-            <h3 className="text-xl font-semibold mb-2">1. Consultation</h3>
-            <p>We assess your needs and recommend tailored solutions for your space and budget.</p>
+      <section className="p-8 md:py-28 bg-white">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
+          Industries We Serve
+        </h2>
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-gray-700">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
+            <div className="text-3xl text-amber-500 mb-3 flex justify-center"><FaHome /></div>
+            <p className="font-semibold">Homes & Apartments</p>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">2. Installation</h3>
-            <p>Our technicians handle everything from wiring to configuration with minimal disruption.</p>
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
+            <div className="text-3xl text-green-500 mb-3 flex justify-center"><FaStore /></div>
+            <p className="font-semibold">Retail & Offices</p>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">3. Support</h3>
-            <p>Enjoy reliable post-installation support and system maintenance whenever needed.</p>
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
+            <div className="text-3xl text-blue-500 mb-3 flex justify-center"><FaSchool /></div>
+            <p className="font-semibold">Educational Institutions</p>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
+            <div className="text-3xl text-indigo-500 mb-3 flex justify-center"><FaIndustry /></div>
+            <p className="font-semibold">Warehouses & Industrial</p>
           </div>
         </div>
       </section>
 
-      <section className="p-8 bg-white">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Industries We Serve</h2>
-        <div className="grid md:grid-cols-4 gap-4 text-center text-gray-800">
-          <p className="bg-gray-50 p-4 rounded shadow">Homes & Apartments</p>
-          <p className="bg-gray-50 p-4 rounded shadow">Retail & Offices</p>
-          <p className="bg-gray-50 p-4 rounded shadow">Educational Institutions</p>
-          <p className="bg-gray-50 p-4 rounded shadow">Warehouses & Industrial</p>
-        </div>
-      </section>
-
-      <section className="p-8 bg-gray-100">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Why Clients Choose Us</h2>
-        <div className="grid md:grid-cols-2 gap-4">
+      <section className="p-8 md:py-28 bg-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
+          Why Clients Choose Us
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {[
             "Experienced and certified technicians",
             "Modern equipment and tools",
             "Fast turnaround time",
             "Affordable pricing plans",
-            "Reliable post-installation support"
+            "Reliable post-installation support",
           ].map((item, i) => (
-            <p key={i} className="flex items-center">
-              <CheckCircle className="text-green-600 mr-2" /> {item}
-            </p>
+            <div key={i} className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+              <FaCheckCircle className="text-green-600 text-xl mr-3 mt-1" />
+              <p className="text-gray-700 font-medium">{item}</p>
+            </div>
           ))}
         </div>
       </section>

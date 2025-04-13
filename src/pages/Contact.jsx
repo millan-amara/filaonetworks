@@ -36,19 +36,6 @@ function Contact() {
       
     }
   
-    // const sendEmail = (e) => {
-    //   e.preventDefault();
-  
-    //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
-    //     .then((result) => {
-    //       alert("Message sent successfully!");
-    //       formRef.current.reset();
-    //     }, (error) => {
-    //       alert("Something went wrong. Please try again.");
-    //       console.log(error.text);
-    //     });
-    // };
-  
     return (
       <section id="contact">
       <div className="contact">

@@ -189,8 +189,8 @@ function Packages() {
 
         <section className="my-8 md:mt-24 py-8 bg-amber-100 text-center rounded-lg mx-0 md:mx-24">
             <h2 className="text-2xl font-bold mb-2">Ready to Upgrade Your Internet?</h2>
-            <p className="mb-4 text-gray-700">Contact us today or sign up to get connected in 24 hours.</p>
-            <button className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700">Get Started</button>
+            <p className="mb-6 text-gray-700">Contact us today or sign up to get connected in 24 hours.</p>
+            <a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700">Get Started</a>
         </section>
     </section>
 
