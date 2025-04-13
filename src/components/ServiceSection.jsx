@@ -47,9 +47,13 @@ const cardVariants = {
   }),
 };
 
-function ServiceSection() {
+function ServiceSection({ adjustMargin = false }) {
   return (
-    <section className="-mt-48 md:mt-0 px-4 text-center h-auto md:h-screen flex flex-col md:justify-center">
+    <section
+      className={`px-4 text-center h-auto md:h-screen flex flex-col md:justify-center ${
+        adjustMargin ? "-mt-48 md:mt-0" : ""
+      }`}
+    >
       <motion.h2
         className="text-3xl font-bold mb-8"
         initial={{ opacity: 0, y: -20 }}

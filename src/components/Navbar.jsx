@@ -19,7 +19,7 @@ function Navbar() {
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaTiktok /></Link></p>
         </div>
 
-        <header className="md:bg-black bg-white px-8 py-2 flex justify-between items-center sticky top-0">
+        <header className="md:bg-black bg-white px-8 py-2 flex justify-between items-center sticky top-0 z-50">
             <Link to='/' className='flex flex-col items-center'>
                 <p className='brand text-4xl font-semibold text-amber-500'>Filao</p>
                 <p className='text-xl font-normal md:text-white'>Network Solutions</p>

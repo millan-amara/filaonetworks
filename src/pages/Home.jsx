@@ -89,7 +89,7 @@ function Home() {
     return (
     <>
       <HeroSection el={el} />
-      <ServiceSection />
+      <ServiceSection adjustMargin />
       <PartnersSection />
       <WhyChooseUs />
       <Testimonials />

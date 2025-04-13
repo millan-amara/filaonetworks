@@ -7,25 +7,7 @@ import ServiceSection from '../components/ServiceSection';
 
 
 function Services() {
-    const services = [
-      {
-        icon: <Wifi className="w-8 h-8 text-orange-600" />, title: "WiFi & Internet Solutions",
-        description: "Home and office WiFi setup, troubleshooting, and mesh networks."
-      },
-      {
-        icon: <Camera className="w-8 h-8 text-orange-600" />, title: "CCTV & Surveillance",
-        description: "Secure your space with modern surveillance systems and remote monitoring."
-      },
-      {
-        icon: <Server className="w-8 h-8 text-orange-600" />, title: "Structured Cabling & Networking",
-        description: "Professional Ethernet cabling, server rack setup, and network planning."
-      },
-      {
-        icon: <Lock className="w-8 h-8 text-orange-600" />, title: "Smart Systems & Access Control",
-        description: "Biometric entry, alarm systems, smart intercoms, and more."
-      },
-    ];
-  
+
     return (
       <>
       <ServiceSection />

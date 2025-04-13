@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { FaCheckCircle } from "react-icons/fa";
 
 const plans = [
     {
@@ -68,25 +69,24 @@ function Packages() {
   return (
     <>
     <motion.div
-      className="my-8 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
+      className="my-12 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={container}
     >
       <motion.h1
-        className="text-xl md:text-2xl text-center mb-8"
+        className="text-2xl md:text-4xl font-bold text-center mb-12 leading-tight text-gray-800"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
         Get connected from as low as{" "}
-        <span className="text-green-500 font-semibold">KES 1500</span> per
-        month!
+        <span className="text-green-600">KES 1500</span> per month!
       </motion.h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 packages max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {plans.map((plan, index) => (
           <motion.div
             key={index}
@@ -94,8 +94,8 @@ function Packages() {
             whileHover={{ scale: 1.03 }}
             className={`${
               plan.highlight
-                ? "border-2 border-amber-500 py-8 px-6 rounded-md shadow-lg text-center transform md:scale-105 bg-white relative"
-                : "border border-slate-200 py-6 px-4 rounded-md shadow hover:shadow-md text-center"
+                ? "border-2 border-amber-500 py-8 px-6 rounded-2xl shadow-lg bg-white relative z-10"
+                : "border border-slate-200 py-6 px-5 rounded-2xl shadow hover:shadow-md bg-white"
             }`}
           >
             {plan.highlight && (
@@ -103,22 +103,25 @@ function Packages() {
                 Popular
               </div>
             )}
-            <h1 className="text-2xl font-bold mb-2">{plan.title}</h1>
-            <p className="text-lg font-semibold text-gray-600 mb-4">
-              {plan.speed}
-            </p>
-            <ul className="mb-4 space-y-2">
+
+            <h2 className="text-xl font-bold mb-1 text-gray-800">{plan.title}</h2>
+            <p className="text-base font-medium text-gray-500 mb-4">{plan.speed}</p>
+
+            <ul className="text-left mb-6 space-y-2 text-sm leading-relaxed text-gray-700">
               {plan.features.map((f, i) => (
-                <li key={i}>{f}</li>
+                <li key={i} className="flex items-start gap-2">
+                  <FaCheckCircle className="text-green-500 mt-1" />
+                  <span>{f}</span>
+                </li>
               ))}
             </ul>
-            <p className="mt-4 text-xl font-semibold text-green-600">
-              {plan.price}
-            </p>
+
+            <p className="text-xl font-bold text-green-600">{plan.price}</p>
           </motion.div>
         ))}
       </div>
     </motion.div>
+
 
     <section className="my-16 md:mt-16 md:mb-40 text-center px-4 max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold mb-4">Why Choose Filao?</h2>
