@@ -76,7 +76,7 @@ function ServiceSection({ adjustMargin = false }) {
             variants={cardVariants}
           >
             <img src={service.img} alt={service.title} className="mx-auto h-20 mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-amber-500">{service.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-rose-600">{service.title}</h3>
             <p>{service.desc}</p>
           </motion.div>
         ))}

@@ -32,7 +32,7 @@ const HeroSection = ({ el }) => {
     <section className="h-[calc(100vh-30px)] md:text-white flex flex-col justify-center items-center text-center z-20 relative">
       <div className="text-4xl md:text-4xl font-bold mb-4 md:mb-12">
         <span>Better </span>
-        <span ref={el} className="auto-type text-amber-500 min-h-[3em]"></span>
+        <span ref={el} className="auto-type text-rose-700 min-h-[3em]"></span>
       </div>
       <p className="text-lg mb-6 md:w-1/2">
         We provide professional WiFi solutions, CCTV installations, and complete network systems for homes and businesses.
@@ -41,7 +41,7 @@ const HeroSection = ({ el }) => {
         href={`https://wa.me/+254720973059`}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-amber-600 font-bold text-white px-4 py-2 rounded-sm hover:bg-amber-700"
+        className="bg-rose-700 font-bold text-white px-4 py-2 rounded-sm hover:bg-amber-700"
       >
         Get a Free Quote
       </a>

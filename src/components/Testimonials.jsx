@@ -57,7 +57,7 @@ function Testimonials() {
               <FaUserCircle className="h-12 w-8 mb-4 text-gray-500" />
             </motion.div>
             <blockquote className="italic text-gray-700 mb-6">{t.quote}</blockquote>
-            <p className="font-semibold text-amber-600">{t.author}</p>
+            <p className="font-semibold text-blue-600">{t.author}</p>
           </motion.div>
         ))}
       </div>

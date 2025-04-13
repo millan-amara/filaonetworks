@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaBars, FaPhone } from "react-icons/fa6";
 import { FaTiktok, FaWhatsapp, FaTimes, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
+import Logo from '../assets/logo.png';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -34,8 +35,9 @@ function Navbar() {
         >
 
             <Link to='/' className='flex flex-col items-center'>
-                <p className='brand text-4xl font-semibold text-amber-500'>Filao</p>
-                <p className='text-xl font-normal md:text-white'>Network Solutions</p>
+                <img src={Logo} className='w-20' />
+                {/* <p className='brand text-4xl font-semibold text-amber-500'>Filao</p>
+                <p className='text-xl font-normal md:text-white'>Network Solutions</p> */}
             </Link>
 
             {/* Hamburger toggle */}

@@ -6,22 +6,22 @@ function WhyChooseUs() {
 
     const features = [
         {
-        icon: <Users className="text-orange-500 w-8 h-8 mb-2" />,
+        icon: <Users className="text-rose-600 w-8 h-8 mb-2" />,
         title: "Professional Team",
         desc: "Trained technicians with hands-on experience in networking & security.",
         },
         {
-        icon: <DollarSign className="text-orange-500 w-8 h-8 mb-2" />,
+        icon: <DollarSign className="text-rose-600 w-8 h-8 mb-2" />,
         title: "Affordable Pricing",
         desc: "Fair, transparent rates with no hidden costs.",
         },
         {
-        icon: <Clock className="text-orange-500 w-8 h-8 mb-2" />,
+        icon: <Clock className="text-rose-600 w-8 h-8 mb-2" />,
         title: "Fast Turnaround",
         desc: "Quick site visits, installations and support when you need it.",
         },
         {
-        icon: <Wrench className="text-orange-500 w-8 h-8 mb-2" />,
+        icon: <Wrench className="text-rose-600 w-8 h-8 mb-2" />,
         title: "Support & Maintenance",
         desc: "Ongoing help and technical support for all systems we install.",
         },
@@ -66,19 +66,19 @@ function WhyChooseUs() {
         viewport={{ once: true }}
         >
         <div>
-            <p className="text-3xl font-bold text-orange-600">99.9%</p>
+            <p className="text-3xl font-bold text-blue-800">99.9%</p>
             <p className="text-gray-600 text-sm">Network Uptime</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-orange-600">1,000+</p>
+            <p className="text-3xl font-bold text-rose-700">1,000+</p>
             <p className="text-gray-600 text-sm">Installations</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-orange-600">24/7</p>
+            <p className="text-3xl font-bold text-rose-700">24/7</p>
             <p className="text-gray-600 text-sm">Support</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-orange-600">4.9★</p>
+            <p className="text-3xl font-bold text-blue-800">4.9★</p>
             <p className="text-gray-600 text-sm">Customer Rating</p>
         </div>
         </motion.div>
