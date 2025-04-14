@@ -26,13 +26,13 @@ function Navbar() {
         </div>
 
         <header
-            className={`px-8 py-2 flex justify-between items-center sticky top-0 z-30 text-black transition-all duration-300 ${
+            className={`px-8 flex justify-between items-center sticky top-0 z-30 text-black transition-all duration-300 ${
                 isHome ? "bg-white md:bg-transparent md:text-white sticky" : "bg-white shadow-md"
             }`}
         >
 
             <Link to='/' className='flex flex-col items-center'>
-                <img src={Logo} className='w-20 ' />
+                <img src={Logo} className='w-16 md:w-20' />
             </Link>
 
             {/* Hamburger toggle */}
