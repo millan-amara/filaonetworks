@@ -18,11 +18,11 @@ function Navbar() {
             isHome ? "bg-white md:bg-transparent" : "md:bg-black bg-white"
         }`} style={{ height: '30px' }}>
 
-            <p className='mr-6 flex items-center'><span className='mr-1'><FaPhone /></span> +254 720-973-059</p>
+            <p className='mr-6 flex items-center'><span className='mr-1'><FaPhone /></span> +254 790-034-459</p>
             <p className='hidden md:flex mr-6 items-center'><span className='mr-1'><MdEmail /></span>info@filaonetworks.co.ke</p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaFacebookF /></Link></p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaInstagram /></Link></p>
-            <p className='hidden md:flex mr-3 bg-green-500 rounded-full py-2 px-2'><a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className='text-lg'><FaWhatsapp /></a></p>
+            <p className='hidden md:flex mr-3 bg-green-500 rounded-full py-2 px-2'><a href={`https://wa.me/+254790034459`} target="_blank" rel="noopener noreferrer" className='text-lg'><FaWhatsapp /></a></p>
             <p className='hidden md:flex mr-3 bg-zinc-700 rounded-full py-2 px-2'><Link className='text-lg'><FaTiktok /></Link></p>
         </div>
 
@@ -50,11 +50,11 @@ function Navbar() {
 
             {/* Desktop menu */}
             <nav className="hidden sm:flex text-white font-medium space-x-6 z-50">
-                <Link to="/" className="hover:underline hover:underline-offset-2 hover:text-amber-500">Home</Link>
-                <Link to="/packages" className="hover:underline hover:underline-offset-2 hover:text-amber-500">Packages</Link>
-                <Link to="/services" className="hover:underline hover:underline-offset-2 hover:text-amber-500">Services</Link>
-                <Link to="/about" className="hover:underline hover:underline-offset-2 hover:text-amber-500">About</Link>
-                <Link to="/contact" className="hover:underline hover:underline-offset-2 hover:text-amber-500">Contact</Link>
+                <Link to="/" className="hover:underline hover:underline-offset-2 hover:text-red-600">Home</Link>
+                <Link to="/packages" className="hover:underline hover:underline-offset-2 hover:text-red-600">Packages</Link>
+                <Link to="/services" className="hover:underline hover:underline-offset-2 hover:text-red-600">Services</Link>
+                <Link to="/about" className="hover:underline hover:underline-offset-2 hover:text-red-600">About</Link>
+                <Link to="/contact" className="hover:underline hover:underline-offset-2 hover:text-red-600">Contact</Link>
             </nav>
 
             {/* Mobile menu */}
@@ -82,7 +82,7 @@ function Navbar() {
                 <div className="absolute bottom-24 left-0 w-full text-center text-sm text-slate-600 px-4">
                     <div className="mb-1 font-semibold text-black">Talk to Us</div>
                     <div className="mb-1">
-                        <a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className="font-medium flex justify-center items-center">
+                        <a href={`https://wa.me/+254790034459`} target="_blank" rel="noopener noreferrer" className="font-medium flex justify-center items-center">
                         <span className='text-green-700 mr-1'>Chat on WhatsApp</span>
                         <FaExternalLinkAlt />
                         </a>

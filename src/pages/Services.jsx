@@ -21,7 +21,7 @@ function Services() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Step 1 */}
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-            <div className="flex justify-center text-4xl text-amber-500 mb-4">
+            <div className="flex justify-center text-4xl text-red-600 mb-4">
               <FaComments />
             </div>
             <h3 className="text-xl font-bold mb-2 text-gray-800">1. Consultation</h3>
@@ -32,7 +32,7 @@ function Services() {
 
           {/* Step 2 */}
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-            <div className="flex justify-center text-4xl text-green-500 mb-4">
+            <div className="flex justify-center text-4xl text-green-600 mb-4">
               <FaTools />
             </div>
             <h3 className="text-xl font-bold mb-2 text-gray-800">2. Installation</h3>
@@ -43,7 +43,7 @@ function Services() {
 
           {/* Step 3 */}
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-            <div className="flex justify-center text-4xl text-blue-500 mb-4">
+            <div className="flex justify-center text-4xl text-blue-600 mb-4">
               <FaHeadset />
             </div>
             <h3 className="text-xl font-bold mb-2 text-gray-800">3. Support</h3>
@@ -60,19 +60,19 @@ function Services() {
         </h2>
         <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-gray-700">
           <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-            <div className="text-3xl text-amber-500 mb-3 flex justify-center"><FaHome /></div>
+            <div className="text-3xl text-red-600 mb-3 flex justify-center"><FaHome /></div>
             <p className="font-semibold">Homes & Apartments</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-            <div className="text-3xl text-green-500 mb-3 flex justify-center"><FaStore /></div>
+            <div className="text-3xl text-green-600 mb-3 flex justify-center"><FaStore /></div>
             <p className="font-semibold">Retail & Offices</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-            <div className="text-3xl text-blue-500 mb-3 flex justify-center"><FaSchool /></div>
+            <div className="text-3xl text-blue-600 mb-3 flex justify-center"><FaSchool /></div>
             <p className="font-semibold">Educational Institutions</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-            <div className="text-3xl text-indigo-500 mb-3 flex justify-center"><FaIndustry /></div>
+            <div className="text-3xl text-indigo-600 mb-3 flex justify-center"><FaIndustry /></div>
             <p className="font-semibold">Warehouses & Industrial</p>
           </div>
         </div>
@@ -91,7 +91,7 @@ function Services() {
             "Reliable post-installation support",
           ].map((item, i) => (
             <div key={i} className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-              <FaCheckCircle className="text-green-600 text-xl mr-3 mt-1" />
+              <FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" />
               <p className="text-gray-700 font-medium">{item}</p>
             </div>
           ))}

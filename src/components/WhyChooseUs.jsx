@@ -66,19 +66,19 @@ function WhyChooseUs() {
         viewport={{ once: true }}
         >
         <div>
-            <p className="text-3xl font-bold text-blue-800">99.9%</p>
+            <p className="text-3xl font-bold text-red-600">99.9%</p>
             <p className="text-gray-600 text-sm">Network Uptime</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-rose-700">1,000+</p>
+            <p className="text-3xl font-bold text-red-600">1,000+</p>
             <p className="text-gray-600 text-sm">Installations</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-rose-700">24/7</p>
+            <p className="text-3xl font-bold text-red-600">24/7</p>
             <p className="text-gray-600 text-sm">Support</p>
         </div>
         <div>
-            <p className="text-3xl font-bold text-blue-800">4.9★</p>
+            <p className="text-3xl font-bold text-red-600">4.9★</p>
             <p className="text-gray-600 text-sm">Customer Rating</p>
         </div>
         </motion.div>

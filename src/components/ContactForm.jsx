@@ -17,7 +17,7 @@ function ContactForm({ onSubmit, form, email, message, handleChange }) {
                 <textarea id="message" name="message" value={message} placeholder='Your Message' onChange={handleChange} rows="4" required className="focus:outline-none focus:ring-2 appearance-none text-sm"></textarea>
             </div>
             <div>
-                <button id="contact-button" type="submit" className="flex bg-rose-700 hover:bg-rose-800 text-white w-full py-2 rounded-md items-center justify-center">Send Message</button>
+                <button id="contact-button" type="submit" className="flex bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-md items-center justify-center">Send Message</button>
             </div>
             
         </form>

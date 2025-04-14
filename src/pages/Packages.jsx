@@ -5,8 +5,8 @@ import Navbar from '../components/Navbar';
 
 const plans = [
     {
-      title: "Filao Core",
-      speed: "8 Mbps",
+      title: "Filao Basic",
+      speed: "5 Mbps",
       features: [
         "✔ Unlimited Internet",
         "✔ 24/7 Support",
@@ -17,29 +17,42 @@ const plans = [
       highlight: false,
     },
     {
-      title: "Filao Plus",
-      speed: "15 Mbps",
+      title: "Filao Standard",
+      speed: "10 Mbps",
       features: [
         "✔ Unlimited Internet",
         "✔ 24/7 Support",
         "✔ Great for work-from-home & streaming",
-        "✔ Supports up to 8 devices",
-        "✔ Free Router Installation",
+        "✔ Supports up to 5 devices",
       ],
-      price: "KES 2500 / month",
+      price: "KES 2000 / month",
       highlight: true,
     },
     {
-      title: "Filao Max",
-      speed: "30 Mbps",
+      title: "Filao Platinum",
+      speed: "15 Mbps",
+      features: [
+        "✔ Unlimited Internet",
+        "✔ 24/7 Support",
+        "✔ Fast downloads",
+        "✔ Supports up to 8 devices",
+        "✔ Priority customer support",
+      ],
+      price: "KES 2500 / month",
+      highlight: false,
+    },
+    {
+      title: "Filao Premium",
+      speed: "20 Mbps",
       features: [
         "✔ Unlimited Internet",
         "✔ 24/7 Support",
         "✔ Ultra-fast downloads",
         "✔ Perfect for smart homes & gaming",
         "✔ Priority customer support",
+        "✔ Free Router Installation",
       ],
-      price: "KES 4500 / month",
+      price: "KES 3000 / month",
       highlight: false,
     },
 ];
@@ -71,7 +84,7 @@ function Packages() {
     <>
     <Navbar />
     <motion.div
-      className="my-12 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
+      className="mb-12 mt-4 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -85,10 +98,10 @@ function Packages() {
         viewport={{ once: true }}
       >
         Get connected from as low as{" "}
-        <span className="text-green-600">KES 1500</span> per month!
+        <span className="text-red-600">KES 1500</span> per month!
       </motion.h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 max-w-6xl mx-auto">
         {plans.map((plan, index) => (
           <motion.div
             key={index}
@@ -96,12 +109,12 @@ function Packages() {
             whileHover={{ scale: 1.03 }}
             className={`${
               plan.highlight
-                ? "border-2 border-amber-500 py-8 px-6 rounded-2xl shadow-lg bg-white relative z-10"
+                ? "border-2 border-red-600 py-8 px-6 rounded-2xl shadow-lg bg-white relative z-10"
                 : "border border-slate-200 py-6 px-5 rounded-2xl shadow hover:shadow-md bg-white"
             }`}
           >
             {plan.highlight && (
-              <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-semibold px-2 py-1 rounded-bl">
+              <div className="absolute top-0 right-0 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-bl">
                 Popular
               </div>
             )}
@@ -112,13 +125,13 @@ function Packages() {
             <ul className="text-left mb-6 space-y-2 text-sm leading-relaxed text-gray-700">
               {plan.features.map((f, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <FaCheckCircle className="text-green-500 mt-1" />
+                  <FaCheckCircle className="text-blue-700 mt-1" />
                   <span>{f}</span>
                 </li>
               ))}
             </ul>
 
-            <p className="text-xl font-bold text-green-600">{plan.price}</p>
+            <p className="text-xl font-bold text-blue-700">{plan.price}</p>
           </motion.div>
         ))}
       </div>
@@ -126,17 +139,17 @@ function Packages() {
 
 
     <section className="my-16 md:mt-16 md:mb-40 text-center px-4 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Why Choose Filao?</h2>
+        <h2 className="text-2xl font-bold mb-4">Why Choose Filao Network?</h2>
         <p className="text-gray-600 mb-6">
             Whether you're working from home, streaming in HD, or managing smart devices, Filao delivers fast, reliable, and affordable internet solutions.
         </p>
         <div className="grid md:grid-cols-3 gap-4 text-left">
-            <div>✅ No hidden fees or contracts</div>
-            <div>✅ Free installation on select plans</div>
-            <div>✅ Trusted local support team</div>
-            <div>✅ Scalable speeds for your needs</div>
-            <div>✅ Modern equipment & coverage</div>
-            <div>✅ Seamless upgrades anytime</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> No hidden fees or contracts</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> Free installation on select plans</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> Trusted local support team</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> Scalable speeds for your needs</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> Modern equipment & coverage</div>
+            <div className='flex'><FaCheckCircle className="text-red-600 text-xl mr-3 mt-1" /> Seamless upgrades anytime</div>
         </div>
     </section>
 
@@ -192,10 +205,10 @@ function Packages() {
             </div>
         </div>
 
-        <section className="my-8 md:mt-24 py-8 bg-amber-100 text-center rounded-lg mx-0 md:mx-24">
+        <section className="my-8 md:mt-24 py-8 bg-red-100 text-center rounded-lg mx-0 md:mx-24">
             <h2 className="text-2xl font-bold mb-2">Ready to Upgrade Your Internet?</h2>
             <p className="mb-6 text-gray-700">Contact us today or sign up to get connected in 24 hours.</p>
-            <a href={`https://wa.me/+254720973059`} target="_blank" rel="noopener noreferrer" className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700">Get Started</a>
+            <a href={`https://wa.me/+254790034459`} target="_blank" rel="noopener noreferrer" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Get Started</a>
         </section>
     </section>
 

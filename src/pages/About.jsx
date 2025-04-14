@@ -21,7 +21,7 @@ function About() {
           transition={{ duration: 0.6 }}
           variants={fadeInUp}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-amber-600">About Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-red-600">About Us</h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Filao Network Solutions provides fast, secure, and scalable networking services tailored to your needs.
             With certified professionals and years of experience, we deliver dependable connectivity and advanced security systems.
