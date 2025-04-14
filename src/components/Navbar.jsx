@@ -27,7 +27,7 @@ function Navbar() {
 
         <header
             className={`px-8 flex justify-between items-center sticky top-0 z-30 text-black transition-all duration-300 ${
-                isHome ? "bg-white md:bg-transparent md:text-white sticky" : "bg-white shadow-md"
+                isHome ? "bg-white md:bg-transparent md:text-white" : "bg-white shadow-md"
             }`}
         >
 

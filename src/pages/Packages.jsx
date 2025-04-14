@@ -197,17 +197,17 @@ function Packages() {
         <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-white p-4 shadow rounded">
               <p>"Excellent service! Internet has been stable for months. Highly recommend Filao!"</p>
-              <p className="mt-2 text-right font-semibold">– James, Embakasi</p>
+              <p className="mt-2 text-right text-blue-600 font-semibold">– James, Embakasi</p>
             </div>
             <div className="bg-white p-4 shadow rounded">
               <p>"Very responsive support and fast installation. Great value for money."</p>
-              <p className="mt-2 text-right font-semibold">– Mercy, Utawala</p>
+              <p className="mt-2 text-right text-blue-600 font-semibold">– Mercy, Utawala</p>
             </div>
         </div>
 
         <section className="my-8 md:mt-24 py-8 bg-red-100 text-center rounded-lg mx-0 md:mx-24">
             <h2 className="text-2xl font-bold mb-2">Ready to Upgrade Your Internet?</h2>
-            <p className="mb-6 text-gray-700">Contact us today or sign up to get connected in 24 hours.</p>
+            <p className="mb-6 text-gray-700">Contact us today or sign up to get connected in less than 12 hours.</p>
             <a href={`https://wa.me/+254790034459`} target="_blank" rel="noopener noreferrer" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Get Started</a>
         </section>
     </section>
