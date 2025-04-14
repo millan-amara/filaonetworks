@@ -1,11 +1,9 @@
 import React from 'react';
-import { Wifi, Camera, Server, Lock } from "lucide-react";
 import { FaHome, FaStore, FaSchool, FaIndustry } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaComments, FaTools, FaHeadset } from "react-icons/fa";
 import ServiceSection from '../components/ServiceSection';
 import Navbar from '../components/Navbar';
-
 
 function Services() {
 
@@ -97,7 +95,6 @@ function Services() {
           ))}
         </div>
       </section>
-
 
     </>
     );

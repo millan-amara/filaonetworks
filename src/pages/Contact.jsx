@@ -43,7 +43,7 @@ function Contact() {
       <section id="contact">
       <div className="contact">
         <h2>Get in Touch</h2>
-        <p>Have any questions about our Services?</p>
+        <p>Have any questions about Our Services?</p>
         <form ref={formRef} onSubmit={onSubmit} id="contact-form" className="contact-form px-3">
           <div className="mb-7">
               <label htmlFor="email" className="mb-3">Email:</label>

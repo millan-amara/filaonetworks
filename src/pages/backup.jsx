@@ -303,11 +303,6 @@ function Home() {
           </form>
         </div>
       </section>
-
-
-
-
-
     </>
 
     );

@@ -26,7 +26,6 @@ function About() {
             Filao Network Solutions provides fast, secure, and scalable networking services tailored to your needs.
             With certified professionals and years of experience, we deliver dependable connectivity and advanced security systems.
           </p>
-          {/* <img src="/about-us.jpg" alt="Our team" className="rounded-xl shadow-xl mx-auto max-w-full h-auto" /> */}
         </motion.div>
       </section>
 

@@ -4,7 +4,6 @@ import Packages from "./pages/Packages";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Scroll from './components/Scroll';
@@ -14,8 +13,6 @@ function App() {
   return (
     <Router>
       <Scroll />
-        {/* <Navbar /> */}
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/packages" element={<Packages />} />

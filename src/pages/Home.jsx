@@ -7,7 +7,6 @@ import PartnersSection from '../components/PartnersSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
-import Navbar from '../components/Navbar';
 
 function Home() {
 
@@ -16,7 +15,6 @@ function Home() {
 
     const form = useRef();
 
-  
     React.useEffect(() => {
       const typed = new Typed(el.current, {
         strings: ['Coverage', 'Security', 'Speeds', 'Access'],
@@ -81,9 +79,7 @@ function Home() {
         })
         .catch((error) => {
           console.log('FAILED...', error);
-        });
-
-        
+        }); 
       }
 
     return (

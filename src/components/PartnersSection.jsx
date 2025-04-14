@@ -84,7 +84,6 @@ function PartnersSection() {
         >
           We Integrate With The Best
         </motion.h2>
-        {/* <h1 className='text-2xl md:text-3xl font-semibold text-center py-2 mb-8' >We Integrate With The Best</h1> */}
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-8 md:gap-y-8 justify-items-center'>
                   {partners.map((partner, index) => (
                     <motion.div

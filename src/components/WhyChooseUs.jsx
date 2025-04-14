@@ -57,7 +57,7 @@ function WhyChooseUs() {
         ))}
         </div>
 
-        {/* Bonus Stat Grid */}
+        {/* Stat Grid */}
         <motion.div
         className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 text-center"
         initial={{ opacity: 0 }}
