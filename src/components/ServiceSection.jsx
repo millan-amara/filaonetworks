@@ -5,6 +5,8 @@ import Router from "../assets/router.png";
 import Wifi from "../assets/wifi.png";
 import Biometric from "../assets/biometric.png";
 import Smartphone from "../assets/smartphone.png";
+import Cloud from '../assets/cloud.png';
+import Iot from '../assets/iot.png';
 
 const services = [
   {
@@ -20,12 +22,22 @@ const services = [
   {
     img: Router,
     title: "Networking Solutions",
-    desc: "Structured cabling, routers, switches & network optimization.",
+    desc: "Network design and installation, Network security, Structured cabling, routers, switches & network optimization.",
   },
   {
     img: Biometric,
     title: "Access Control & Smart Systems",
     desc: "Biometric access, smart intercoms, alarm system integration.",
+  },
+  {
+    img: Cloud,
+    title: "Cloud Network Solutions",
+    desc: "Enable seamless remote access, cloud backups, and scalable network infrastructure through modern cloud technologies.",
+  },
+  {
+    img: Iot,
+    title: "Internet of Things",
+    desc: "Integrate and manage smart devices for homes and businesses — from sensors to automation systems — for better efficiency and control.",
   },
   {
     img: Smartphone,
@@ -51,7 +63,7 @@ function ServiceSection({ adjustMargin = false }) {
   return (
     <section
       className={`px-4 text-center h-auto md:min-h-screen flex flex-col md:justify-center ${
-        adjustMargin ? "-mt-20 md:mt-0" : "mt-12"
+        adjustMargin ? "-mt-20 md:mt-12" : "mt-12"
       }`}
     >
       <motion.h2
