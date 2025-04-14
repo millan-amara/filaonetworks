@@ -166,7 +166,7 @@ function Packages() {
             </div>
             <div>
               <h3 className="font-semibold text-lg">Do I get a router?</h3>
-              <p className="text-gray-600">Yes, a router is included with the Plus and Max packages. For Core, you can use your own or rent one from us.</p>
+              <p className="text-gray-600">Yes, a router is included with the Premium package. For the other packages, you can use your own or rent one from us.</p>
             </div>
             <div>
               <h3 className="font-semibold text-lg">Can I upgrade my package later?</h3>
