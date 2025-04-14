@@ -50,8 +50,8 @@ const cardVariants = {
 function ServiceSection({ adjustMargin = false }) {
   return (
     <section
-      className={`px-4 text-center h-auto md:h-screen flex flex-col md:justify-center ${
-        adjustMargin ? "-mt-20 md:mt-0" : ""
+      className={`px-4 text-center h-auto md:min-h-screen flex flex-col md:justify-center ${
+        adjustMargin ? "-mt-20 md:mt-0" : "mt-12"
       }`}
     >
       <motion.h2

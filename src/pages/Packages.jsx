@@ -84,7 +84,7 @@ function Packages() {
     <>
     <Navbar />
     <motion.div
-      className="mb-12 mt-4 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
+      className="mb-12 mt-12 md:mt-4 px-4 h-auto md:min-h-screen md:flex flex-col justify-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
