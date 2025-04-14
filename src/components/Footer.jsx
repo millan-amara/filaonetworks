@@ -14,7 +14,7 @@ function Footer() {
             <p className="brand text-3xl mb-3 text-blue-600 font-semibold">Filao <span className='text-red-600'>Network</span></p>
             <p className="mb-5 text-base">Need a network upgrade? Let's discuss your WiFi or security needs. Fast response guaranteed.</p>
             <p>info@filaonetworks.co.ke</p>
-            <p className='mb-6 md:mb-0'>+254 720-973-059</p>
+            <p className='mb-6 md:mb-0'>+254 790-034-459</p>
             <a a href={`https://wa.me/+254790034459`} target="_blank" rel="noopener noreferrer" className="border-2 border-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-lg font-bold mt-6">Talk to Us</a>
         </div>
         <div className="border-l-2 border-white hidden md:block">
